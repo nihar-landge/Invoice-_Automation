@@ -1,5 +1,5 @@
 -- Sample data for Invoice table
-INSERT INTO invoice (vendor, product, amount, date, action)
+INSERT INTO invoice (vendor_name, product_name, amount, invoice_date, action)
 VALUES
 ('ABC Supplies', 'Laptop', 75000, '2025-08-01', 'pending'),
 ('XYZ Traders', 'Printer', 12000, '2025-08-03', 'pending'),
