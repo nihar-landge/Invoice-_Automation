@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:8080', // backend base URL
+    baseURL: process.env.REACT_APP_API_URL || 'http://localhost:8080',
     timeout: 5000,
     headers: {
         'Content-Type': 'application/json',
     },
-    withCredentials: true, // optional for cookies/auth
+    withCredentials: true,
 });
 
 const handleError = (error) => {
